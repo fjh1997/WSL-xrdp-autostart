@@ -7,7 +7,7 @@ I have tried to add xrdp in the wsl-autostart command list,However it seems not 
 
 so,I just make a dirty hack by creating a simple vbscript to simulae keyboad input.
 
-the installation is easy,just add the vbscript in windows task scheduler and enjoy it :)
+the installation is easy,just add the vbscript in windows task scheduler(you can set delay 5 sec to run the task in case of too early to send keys) and enjoy it :)
  ```vb
  Set bjShell = CreateObject("Wscript.Shell")
 strCommandLine = "kali"        ' your WSL distribution
